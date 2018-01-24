@@ -116,6 +116,7 @@ public class WeaponPanelClass
     public Color UnSelecterRamColor;
     public List<string> NamesWeapon = new List<string>();
     public List<int> CostsWeapons = new List<int>();
+    [Multiline(3)]
     public List<string> DescriptionTexts = new List<string>();
     public Image MainIconWeapon;
     public Text NameWeapon;

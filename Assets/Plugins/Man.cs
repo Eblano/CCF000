@@ -11,6 +11,7 @@ public class Man : MonoBehaviour
 
     public int man;
     public int ws_index = 50;
+    public int PersentMoney = 0;
     public int money = 100;
     public int speed_walk = 2;
     public float swim_centr = 1.4f;

@@ -1268,7 +1268,7 @@ public class Player : MonoBehaviour
         script_cam.target = null;
         Time.timeScale = 0.3f;
         StopCoroutine(ResultMatch());
-        MInput.RewardPlayer(TimeMatch, CountKill, Rewarded);
+        MInput.RewardPlayer(TimeMatch, CountKill, Rewarded, player.GetComponent<Man>().PersentMoney);
         //MInput.DeathPanel.DeathPanel.SetActive(true);
         Invoke("ReSpawn", 2);
     }//ReSpawn

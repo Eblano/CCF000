@@ -164,7 +164,7 @@ public class MainInput : MonoBehaviour
         }
     }
 
-    public void RewardPlayer(int time, int kill, int reward)
+    public void RewardPlayer(int time, int kill, int reward, int bonus)
     {
         KillRecord = false;
         TimeRecord = false;
@@ -176,6 +176,7 @@ public class MainInput : MonoBehaviour
             countMoneyTime = (time * (level + 1));
         else
             countMoneyTime = (kill * 20) * (level + 1);
+        countMoneyTime += countMoneyTime * (bonus / 10);
         int money = countMoneyTime + reward;
         if(KillRecord)
         {
